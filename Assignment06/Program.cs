@@ -14,9 +14,6 @@ namespace Assignment06
         Saturday,
         Sunday
     }
-    [Flags]
-    public enum Permissions
-    { Read = 1, Write = 2, Delete = 4, Execute = 8 }
 
     public struct Person
     {
@@ -42,6 +39,10 @@ namespace Assignment06
         Autumn,
         Winter
     }
+
+    [Flags]
+    public enum Permissions
+    { Read = 1, Write = 2, Delete = 4, Execute = 8 }
 
     public enum Color
     {
